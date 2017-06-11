@@ -1,0 +1,24 @@
+.section {
+  padding: 70px 0;
+}
+.section-title {
+  width: 620px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.section__title-head {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  @include fira(medium);
+  font-size: 42px;
+  line-height: 27px;
+  color: $black;
+}
+.section__title-desc {
+  @include fira(light);
+  font-size: 21px;
+  line-height: 28px;
+  color: $grey;
+}

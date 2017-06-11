@@ -1,0 +1,13 @@
+.footer{
+  @include fira(regular);
+  font-size: 14px;
+  line-height: 21px;
+  background: $black;
+}
+.footer__text{
+  width: 55%;
+  padding-top: 10px;
+  margin: 0 auto;
+  color: rgba(#fff, 0.5);
+  text-align: center;
+}

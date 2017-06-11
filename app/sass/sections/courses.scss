@@ -1,0 +1,113 @@
+.courses {
+  background: url('../images/gplaypattern.png');
+}
+
+.courses__list{
+  margin: 0;
+  padding: 0;
+  @extend %clearfix;
+  margin: 0 -10px;
+  font-size: 0;
+}
+
+.courses__item {
+  @include inline-block(top);
+  width: 33.3%;
+  margin: 0;
+  margin-bottom: 70px;
+  padding: 0;
+}
+
+.courses__link {
+  display: block;
+  padding: 0px 10px;
+  text-decoration: none;
+
+  &:hover {
+    .courses__title {
+      color: $green;
+    }
+    .courses__img {
+      &:after {
+        bottom: 0;
+      }
+    }
+  }
+}
+
+.courses__shadow {
+  @include box-shadow(0 1px 5px 0 rgba(#000, 0.2))
+}
+
+.courses__img {
+  position: relative;
+  overflow: hidden;
+  &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    height: 20px;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    background-color: $green;
+    transition: all .5s;
+  }
+}
+
+.courses__img-pic {
+  display: block;
+  max-width: 100%;
+}
+
+.courses__desc {
+
+}
+
+.courses__text {
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.courses__title {
+  margin-bottom: 10px;
+  @include fira(regular);
+  font-size: 21px;
+  line-height: 24px;
+  color: $black;
+  transition: all .5s;
+}
+
+.courses__text-content {
+  margin-bottom: 13px;
+}
+
+.courses__date {
+  @include  fira(light);
+  font-size: 14px;
+  color: #c0c0c0;
+}
+
+.courses__check {
+  padding: 20px 20px;
+  font-size: 0;
+  background-color: #f6f7f2;
+}
+
+.courses__check-elem {
+  @include inline-block(middle);
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+  background-color: #fff;
+  border: 2px solid #b6b6b6;
+}
+
+.courses__check-text {
+  @include inline-block(middle);
+  @include fira(regular);
+  font-size: 18px;
+  line-height: 29px;
+  color: $grey;
+}

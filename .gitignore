@@ -1,0 +1,6 @@
+app/bower
+*.log
+dist
+node_modules
+.idea
+.idea/*

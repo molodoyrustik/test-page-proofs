@@ -1,0 +1,78 @@
+.header {
+  min-height: 90px;
+  background-color: $green;
+}
+.header__left {
+  float: left;
+}
+.user {
+  margin-top: 15px;
+}
+.user__avatar-wrap {
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+.user__avatar {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #ccc;
+}
+
+.user__data-wrap {
+  display: inline-block;
+  vertical-align: middle;
+}
+.user__name {
+  margin: 0;
+  padding: 0;
+  @include fira(medium);
+  font-size: 21px;
+  line-height: 28px;
+  color: #fff;
+}
+.user__email {
+  margin: 0;
+  padding: 0;
+  @include fira(medium);
+  font-size: 14px;
+  line-height: 28px;
+  color: #d2e7b8;
+}
+.header__right {
+  float: right;
+}
+.social {
+  margin-top: 25px;
+}
+.social__list {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.social__item {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.social__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -99999px;
+}
+
+
+$socialArr: 'git', 'skype', 'vk';
+@each $social in $socialArr {
+  .social__link--#{$social} {
+    background-image: url(../images/icons/#{$social}.svg);
+  }
+}
